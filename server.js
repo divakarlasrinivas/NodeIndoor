@@ -11,8 +11,6 @@ const port = process.env.PORT || 3000; // Use Railway-assigned PORT or default t
 
 // Middleware setup
 app.use(express.static(path.join(__dirname, 'public'))); // Serve static files from 'public'
-app.use(nocache());
-app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
