@@ -19,6 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Default route to serve app.html
 app.get('/', function (req, res) {
+  console.log('POST request received with payload:', req.body);
   res.sendFile(path.join(__dirname, 'public/html/app.html'));
 });
 
