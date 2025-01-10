@@ -2,7 +2,6 @@ const express = require('express');
 const path = require('path');
 const indexRouter = require('./routes/index');
 const http = require('http');
-const cors = require('cors');
 const bodyParser = require('body-parser');
 
 // Create Express app and HTTP server
