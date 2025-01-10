@@ -1,7 +1,6 @@
 const express = require('express');
 const path = require('path');
 const indexRouter = require('./routes/index');
-const nocache = require('nocache');
 const http = require('http');
 const cors = require('cors');
 const bodyParser = require('body-parser');
